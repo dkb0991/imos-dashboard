@@ -118,22 +118,7 @@ st.write(f"Debt: {allocation['Debt']}%")
 st.write(f"REITs: {allocation['REITs']}%")
 st.write(f"Gold: {allocation['Gold']}%")
 st.write(f"Cash: {allocation['Cash']}%")
-st.success("""
-TODAY'S DECISION
 
-Deploy: YES
-
-Suggested Allocation:
-70% Equity
-25% Debt
-5% Gold
-
-Preferred:
-Flexicap Mutual Fund
-
-Risk Level:
-Moderate
-""")
 st.divider()
 
 st.subheader("What is IMOS Score?")
