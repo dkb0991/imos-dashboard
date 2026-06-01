@@ -79,3 +79,22 @@ Interpretation:
 
 0-20 → High Risk
 """)
+st.divider()
+
+st.subheader("Current Dashboard Status")
+
+st.write("""
+✅ Deployment Working
+
+✅ Dashboard Online
+
+✅ Automatic Updates Enabled
+
+🔄 Live Market Data - Coming Soon
+
+🔄 Debt Market Signals - Coming Soon
+
+🔄 IPO/QIP Heat Index - Coming Soon
+
+🔄 Sector Rotation - Coming Soon
+""")
