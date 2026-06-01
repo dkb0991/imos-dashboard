@@ -5,7 +5,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("India Market Operating System (IMOS)")
+st.title("🏠 Executive Dashboard")
 
 st.subheader("Executive Dashboard")
 
