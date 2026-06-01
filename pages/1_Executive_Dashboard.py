@@ -168,3 +168,6 @@ st.write("""
 
 🔄 Sector Rotation - Coming Soon
 """)
+st.subheader("Nifty Test")
+
+st.write(nifty_data.tail())
