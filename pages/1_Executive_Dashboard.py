@@ -1,9 +1,11 @@
 import streamlit as st
 import yfinance as yf
+from utils.score_engine import get_scores
 st.set_page_config(
     page_title="IMOS Dashboard",
     layout="wide"
 )
+scores = get_scores()
 # Live Market Data
 
 nifty = yf.Ticker("^NSEI")
