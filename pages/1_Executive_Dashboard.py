@@ -1,6 +1,11 @@
 import streamlit as st
 import yfinance as yf
 from utils.score_engine import get_scores
+from models.recommendation import (
+    get_market_assessment,
+    get_deployment_action,
+    get_debt_assessment
+)
 st.set_page_config(
     page_title="IMOS Dashboard",
     layout="wide"
