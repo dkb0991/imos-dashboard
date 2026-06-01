@@ -4,7 +4,22 @@ st.set_page_config(
     page_title="IMOS Dashboard",
     layout="wide"
 )
+# Live Market Data
 
+nifty = yf.Ticker("^NSEI")
+vix = yf.Ticker("^INDIAVIX")
+
+nifty_hist = nifty.history(period="2d")
+vix_hist = vix.history(period="2d")
+
+nifty_price = round(nifty_hist["Close"].iloc[-1], 2)
+nifty_change = round(
+    nifty_hist["Close"].iloc[-1] -
+    nifty_hist["Close"].iloc[-2],
+    2
+)
+
+vix_price = round(vix_hist["Close"].iloc[-1], 2)
 st.title("🏠 Executive Dashboard")
 
 st.subheader("Executive Dashboard")
