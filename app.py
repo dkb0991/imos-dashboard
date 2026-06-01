@@ -53,6 +53,27 @@ with col3:
         "54",
         "-1"
     )
+st.subheader("Market Snapshot")
+
+colA, colB, colC = st.columns(3)
+
+with colA:
+    st.metric(
+        "Nifty 50",
+        "Coming Soon"
+    )
+
+with colB:
+    st.metric(
+        "India VIX",
+        "Coming Soon"
+    )
+
+with colC:
+    st.metric(
+        "Market Status",
+        "Coming Soon"
+    )
 st.divider()
 
 st.subheader("Today's Decision")
