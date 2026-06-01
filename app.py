@@ -12,14 +12,21 @@ vix = yf.Ticker("^INDIAVIX")
 nifty_hist = nifty.history(period="2d")
 vix_hist = vix.history(period="2d")
 
-nifty_price = round(nifty_hist["Close"].iloc[-1], 2)
-nifty_change = round(
-    nifty_hist["Close"].iloc[-1] -
-    nifty_hist["Close"].iloc[-2],
-    2
-)
+nifty_price = "N/A"
+nifty_change = "N/A"
+vix_price = "N/A"
 
-vix_price = round(vix_hist["Close"].iloc[-1], 2)
+if len(nifty_hist) >= 2:
+    nifty_price = round(nifty_hist["Close"].iloc[-1], 2)
+
+    nifty_change = round(
+        nifty_hist["Close"].iloc[-1]
+        - nifty_hist["Close"].iloc[-2],
+        2
+    )
+
+if len(vix_hist) >= 1:
+    vix_price = round(vix_hist["Close"].iloc[-1], 2)
 st.title("🏠 Executive Dashboard")
 
 st.subheader("Executive Dashboard")
