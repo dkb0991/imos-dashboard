@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("IPO & QIP Dashboard")
+st.title("🚀 IPO & QIP Dashboard")
 
 st.subheader("Capital Raising Heat Index")
 
