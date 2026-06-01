@@ -5,7 +5,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("🇮🇳 IMOS - Investment Decision System")
+st.title("India Market Operating System (IMOS)")
 
 st.subheader("Executive Dashboard")
 
