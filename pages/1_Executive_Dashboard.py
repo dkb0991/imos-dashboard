@@ -44,8 +44,7 @@ with col1:
 with col2:
     st.metric(
         "Capital Deployment Index",
-        "68",
-        "+1"
+        scores["cdi"]
     )
 
 with col3:
