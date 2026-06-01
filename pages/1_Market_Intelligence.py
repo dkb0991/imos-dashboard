@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("Market Intelligence")
+st.title("📊 Market Intelligence")
 
 st.subheader("Structural Health")
 
