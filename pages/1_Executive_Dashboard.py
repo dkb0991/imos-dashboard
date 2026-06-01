@@ -6,6 +6,7 @@ from models.recommendation import (
     get_deployment_action,
     get_debt_assessment
 )
+from models.asset_allocation import get_asset_allocation
 st.set_page_config(
     page_title="IMOS Dashboard",
     layout="wide"
@@ -20,6 +21,11 @@ deployment_action = get_deployment_action(
 )
 
 debt_assessment = get_debt_assessment(
+    scores["dos"]
+)
+allocation = get_asset_allocation(
+    scores["imos"],
+    scores["cdi"],
     scores["dos"]
 )
 # Live Market Data
