@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-st.title("Sector Rotation")
+st.title("🔄 Sector Rotation")
 
 data = {
     "Rank": [1, 2, 3, 4, 5, 6],
