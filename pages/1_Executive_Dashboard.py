@@ -7,6 +7,7 @@ from models.recommendation import (
     get_debt_assessment
 )
 from models.asset_allocation import get_asset_allocation
+from data.live_data import get_nifty_data
 st.set_page_config(
     page_title="IMOS Dashboard",
     layout="wide"
