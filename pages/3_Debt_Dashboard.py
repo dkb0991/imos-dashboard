@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("Debt Dashboard")
+st.title("🏦 Debt Dashboard")
 
 st.subheader("Debt Opportunity Score")
 
