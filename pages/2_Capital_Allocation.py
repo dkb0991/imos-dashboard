@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("Capital Allocation")
+st.title("💰 Capital Allocation")
 
 st.subheader("Capital Deployment Index")
 
