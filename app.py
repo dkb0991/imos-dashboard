@@ -51,3 +51,31 @@ Flexicap Mutual Fund
 Risk Level:
 Moderate
 """)
+st.divider()
+
+st.subheader("What is IMOS Score?")
+
+st.write("""
+The IMOS Score measures the overall health of the Indian stock market.
+
+It combines:
+
+- Structural Health
+- Liquidity
+- Risk Appetite
+- Momentum
+- Sentiment
+- IPO/QIP Activity
+
+Interpretation:
+
+80-100 → Strong Bull Market
+
+60-80 → Healthy Market
+
+40-60 → Neutral
+
+20-40 → Weak Market
+
+0-20 → High Risk
+""")
