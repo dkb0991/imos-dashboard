@@ -13,6 +13,7 @@ st.set_page_config(
     layout="wide"
 )
 scores = get_scores()
+nifty_data = get_nifty_data()
 market_assessment = get_market_assessment(
     scores["imos"]
 )
