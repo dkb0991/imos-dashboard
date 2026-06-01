@@ -92,7 +92,13 @@ with colC:
 st.divider()
 
 st.subheader("Today's Decision")
+st.success(f"""
+Market Assessment: {market_assessment}
 
+Capital Deployment: {deployment_action}
+
+Debt Assessment: {debt_assessment}
+""")
 st.success("""
 TODAY'S DECISION
 
