@@ -105,6 +105,19 @@ Capital Deployment: {deployment_action}
 
 Debt Assessment: {debt_assessment}
 """)
+st.subheader("Fresh Capital Deployment Plan")
+
+st.info("""
+⚠️ This recommendation applies ONLY to NEW money available for investment.
+
+⚠️ It is NOT a recommendation to sell or rebalance existing holdings.
+""")
+
+st.write(f"Equity: {allocation['Equity']}%")
+st.write(f"Debt: {allocation['Debt']}%")
+st.write(f"REITs: {allocation['REITs']}%")
+st.write(f"Gold: {allocation['Gold']}%")
+st.write(f"Cash: {allocation['Cash']}%")
 st.success("""
 TODAY'S DECISION
 
