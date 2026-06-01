@@ -50,8 +50,7 @@ with col2:
 with col3:
     st.metric(
         "Debt Opportunity Score",
-        "54",
-        "-1"
+        scores["dos"]
     )
 st.subheader("Market Snapshot")
 
