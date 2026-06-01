@@ -11,6 +11,17 @@ st.set_page_config(
     layout="wide"
 )
 scores = get_scores()
+market_assessment = get_market_assessment(
+    scores["imos"]
+)
+
+deployment_action = get_deployment_action(
+    scores["cdi"]
+)
+
+debt_assessment = get_debt_assessment(
+    scores["dos"]
+)
 # Live Market Data
 
 nifty = yf.Ticker("^NSEI")
