@@ -35,9 +35,9 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
     st.metric(
-        "Nifty 50",
-        nifty_price,
-        nifty_change
+        "IMOS Score",
+        "72",
+        "+2"
     )
 
 with col2:
